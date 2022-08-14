@@ -1,0 +1,15 @@
+html{
+    font-family: 'Germania One', cursive;
+    background-color: rgb(77, 107, 136);
+}
+p{
+    font-size: 4vh;
+}
+.button{
+    font-family: 'Germania One', cursive;
+    font-size: 5vh;
+}
+.Money{
+    text-align: right;
+    font-size: 6vh;
+}
