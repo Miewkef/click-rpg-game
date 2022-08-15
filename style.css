@@ -9,15 +9,22 @@ html{
 p{
     font-size: 4vh;
 }
-.button{
+
+.collect{
     font-size: 5vh;
 }
 
-.Inventory{
+.action{
     font-size: 6vh;
 }
-#coinCount{
-    color: rgb(216, 125, 40)
+#valueCoin{
+    color: rgb(231, 116, 39)
+}
+#sell{
+    font-size: 6vh;
+}
+#shop{
+    font-size: 6vh;
 }
 .Money{
     font-size: 6vh;

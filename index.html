@@ -9,16 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=MedievalSharp&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <button class="button" onclick="incrementButton()">Click me!</button>
+    <button class="collect" id="berry" onclick="incrementButton()">Click me!</button>
     <ul>
         <li><p>Strawberries: <b id="incrementStraw">0</b></p></li>
         <li><p>Raspberries: <b id="incrementRasp">0</b></p></li>
         <li><p>Grapes: <b id="incrementGrape">0</b></p></li>
         <li><p>Blackberries: <b id="incrementBlack">0</b></p></li>
     </ul>
-    <h2 class="Money">Coins: <b class="Money" id="coinCount">0</b></h2>
-    <button class="Inventory" id="openInv" onclick="showInv()">Inventory</button>
-    <button class="Inventory" id="sell">Sell</button>
+    <h2 class="Money">Coins: <b class="Money" id="valueCoin">0</b></h2>
+    <button class="action" id="inventory" onclick="showInv()">Inventory</button>
+    <button id="sell" onclick="sellButton()">Sell</button>
+    <button id="shop" onclick="shopButton()">Shop</button>
     <script src="gameCode.js"></script>
 </body>
 </html>
+<!-- --> 
