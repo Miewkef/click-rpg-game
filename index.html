@@ -10,8 +10,15 @@
 </head>
 <body>
     <button class="button" onclick="incrementButton()">Click me!</button>
+    <ul>
+        <li><p>Strawberries: <b id="incrementStraw">0</b></p></li>
+        <li><p>Raspberries: <b id="incrementRasp">0</b></p></li>
+        <li><p>Grapes: <b id="incrementGrape">0</b></p></li>
+        <li><p>Blackberries: <b id="incrementBlack">0</b></p></li>
+    </ul>
     <h2 class="Money">Coins: <b class="Money" id="coinCount">0</b></h2>
-    <p>Strawberries: <b id="incrementText">0</b></p>
+    <button class="Inventory" id="openInv" onclick="showInv()">Inventory</button>
+    <button class="Inventory" id="sell">Sell</button>
     <script src="gameCode.js"></script>
 </body>
 </html>

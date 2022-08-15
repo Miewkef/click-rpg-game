@@ -1,15 +1,25 @@
-html{
+*{
     font-family: 'Germania One', cursive;
-    background-color: rgb(77, 107, 136);
+    color: rgb(12, 12, 12);
 }
+html{
+    background-color: rgb(77, 127, 136);
+}
+
 p{
     font-size: 4vh;
 }
 .button{
-    font-family: 'Germania One', cursive;
     font-size: 5vh;
 }
-.Money{
-    text-align: right;
+
+.Inventory{
     font-size: 6vh;
+}
+#coinCount{
+    color: rgb(216, 125, 40)
+}
+.Money{
+    font-size: 6vh;
+    text-align: right;
 }
