@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>game</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=MedievalSharp&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
     <button class="collect" id="berry" onclick="incrementButton()">Click me!</button>
@@ -16,11 +16,18 @@
         <li><p>Grapes: <b id="incrementGrape">0</b></p></li>
         <li><p>Blackberries: <b id="incrementBlack">0</b></p></li>
     </ul>
-    <h2 class="Money">Coins: <b class="Money" id="valueCoin">0</b></h2>
+    <h2 class="
+    ">Coins: <b class="Money" id="valueCoin">0</b></h2>
     <button class="action" id="inventory" onclick="showInv()">Inventory</button>
-    <button id="sell" onclick="sellButton()">Sell</button>
-    <button id="shop" onclick="shopButton()">Shop</button>
-    <script src="gameCode.js"></script>
+    <button class="action" id='sell'>Sell:</button>
+    <select class="action" id="selectSell">
+        <option value="strawSell">Strawbies</option>
+        <option value='raspSell'>Raspies</option>
+        <option value='grapeSell'>Grapes</option>
+        <option value='blackSell'>Blackies</option>
+    </select>
+    <button class="action" id='Shop'>Shop</button>
+    <script src="src/gameCode.js"></script>
 </body>
 </html>
 <!-- --> 
