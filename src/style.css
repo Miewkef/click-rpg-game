@@ -1,32 +1,21 @@
 *{
     font-family: 'Germania One', cursive;
-    color: rgb(12, 12, 12);
+    color: rgb(6, 12, 12);
+    font-size: 6vh;
 }
 html{
-    background-color: rgb(77, 127, 136);
+    background-color: #4d7f88;
 }
 
 p{
     font-size: 4vh;
 }
 
-.collect{
-    font-size: 5vh;
+.Money{
+    /*text-align: right;*/
 }
 
-.action{
-    font-size: 6vh;
-}
 #valueCoin{
     color: rgb(231, 116, 39)
 }
-#sell{
-    font-size: 6vh;
-}
-#shop{
-    font-size: 6vh;
-}
-.Money{
-    font-size: 6vh;
-    /*text-align: right;*/
-}
+

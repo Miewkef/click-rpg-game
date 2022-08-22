@@ -9,15 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Germania+One&family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button class="collect" id="berry" onclick="incrementButton()">Click me!</button>
-    <ul>
+    <button class="collect" id="increaseItems" onclick="incrementButton()">Click me!</button>
+    <dl>
         <li><p>Strawberries: <b id="incrementStraw">0</b></p></li>
         <li><p>Raspberries: <b id="incrementRasp">0</b></p></li>
         <li><p>Grapes: <b id="incrementGrape">0</b></p></li>
         <li><p>Blackberries: <b id="incrementBlack">0</b></p></li>
-    </ul>
-    <h2 class="
-    ">Coins: <b class="Money" id="valueCoin">0</b></h2>
+        <li><p>Swords: <b id="incrementSword">0</b></p></li>
+    </dl>
+    <h2 class="Money">Coins: <b class="Money" id="valueCoin">0</b></h2>
     <button class="action" id="inventory" onclick="showInv()">Inventory</button>
     <button class="action" id='sell'>Sell:</button>
     <select class="action" id="selectSell">
@@ -26,7 +26,13 @@
         <option value='grapeSell'>Grapes</option>
         <option value='blackSell'>Blackies</option>
     </select>
-    <button class="action" id='Shop'>Shop</button>
+    <button title="Select needed item and click this btn to buy" class="action" id='Shop' >Shop</button>
+    <select title="Select needed item and click 'Shop' btn to buy" name="shop" id="selectShop">
+        <option value="raspShop">Raspberry</option>
+        <option value="grapeShop">Grape</option>
+        <option value="blackShop">Blackberry</option>
+        <option value="sword">Sword</option>
+    </select>
     <script src="src/gameCode.js"></script>
 </body>
 </html>

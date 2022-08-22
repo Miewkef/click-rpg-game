@@ -7,17 +7,19 @@ let strawCount = 0;
 let raspCount = 0;
 let grapeCount = 0;
 let blackCount = 0;
-document.getElementById('berry').onclick = function(){
+let swordCount =0;
+
+document.getElementById('increaseItems').onclick = function(){
     strawCount +=1;
     document.getElementById('incrementStraw').innerHTML=strawCount;
     if (strawCount!=0){
         showMoney = document.getElementsByClassName("Money")[0].style.visibility = "visible";
     }
-}//increaseItems
+} //increaseItems
 
-document.getElementById('inventory').onclick = function(){
+document.getElementById('inventory').onclick = () => {
     (strawCount!=0) ? alert(`you have\n${strawCount} sb\n${raspCount} rb\n${grapeCount} grp\n${blackCount} bb`) : alert('you have nothing to lose');
-}//inventory
+} //inventory
 
 document.getElementById('sell').onclick = function() {
     let sellItem = document.getElementById('selectSell').value
@@ -39,7 +41,7 @@ document.getElementById('sell').onclick = function() {
             strawCount-=coinsAvailable*5;
             document.getElementById('incrementStraw').innerHTML=strawCount;
         } else {
-            alert("not enough strawies")
+            alert("not enough strawbies")
         }
     }
     else if (sellItem == 'raspSell'){
@@ -102,12 +104,38 @@ document.getElementById('sell').onclick = function() {
             blackCount-=coinsAvailable*5;
             document.getElementById('incrementBlack').innerHTML=blackCount;
         } else {
-            alert("not enough blackies")
+            alert("not enough blackbies")
         }
 
     }
 }
 
+let shopBtn = document.getElementById('Shop').innerHTML
 document.getElementById('Shop').onclick = () => {
-
+    let shopItem = document.getElementById('selectShop').value;
+    swordCount = document.getElementById('incrementSword').innerHTML;
+    if (shopItem == 'raspShop')
+    {(currentCoins >=1) ? (++raspCount &&
+        (document.getElementById('incrementRasp').innerHTML = raspCount) &&
+        (document.getElementById('valueCoin').innerHTML = --currentCoins)) : alert('not enough money')}
+    else if (shopItem == 'grapeShop')
+    {(currentCoins >=3) ? (++grapeCount &&
+        (document.getElementById('incrementGrape').innerHTML = grapeCount) &&
+        (document.getElementById('valueCoin').innerHTML = (currentCoins -= 3))) : alert('not enough money')}
+    else if(shopItem == 'blackShop')
+    {(currentCoins >=5) ? (++blackCount &&
+        (document.getElementById('incrementBlack').innerHTML = blackCount) &&
+        (document.getElementById('valueCoin').innerHTML = (currentCoins -= 5))) : alert('not enough money')}
+    else if(shopItem == 'sword')
+    {(currentCoins >=10) ? (++swordCount &&
+        (document.getElementById('incrementSword').innerHTML = swordCount) &&
+        (document.getElementById('valueCoin').innerHTML = (currentCoins -= 10))) : alert('not enough money')}
 }
+
+
+/*while (raspCount >0) {
+    setTimeout(() => {
+        ++strawCount
+        document.getElementById('incrementStraw').innerHTML = strawCount
+    }, '1000')
+}*/
